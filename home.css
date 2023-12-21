@@ -52,4 +52,24 @@ main p {
     font-weight: bold;
 }
 
-/* You might want to add additional styles for other elements */
+.confetti {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    animation: confetti-fall 3s ease-out;
+}
+
+.confetti.red {
+    background-color: rgb(141, 27, 17);
+}
+
+.confetti.blue {
+    background-color: rgb(6, 24, 87);
+}
+
+@keyframes confetti-fall {
+    0% { transform: translateY(0) rotate(0deg); opacity: 1; }
+    100% { transform: translateY(500px) rotate(360deg); opacity: 0; }
+}
+
+
