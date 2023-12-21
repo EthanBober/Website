@@ -37,7 +37,7 @@ document.getElementById('goQuakers').addEventListener('click', function() {
 
         // Calculate random velocities for X and Y
         let xVelocity = 10 * (Math.random() - 0.5);
-        let yVelocity = -15 + Math.random() * -50; // Negative to move upwards
+        let yVelocity = -15 + Math.random() * -5; // Negative to move upwards
 
         confetti.setAttribute('data-x-velocity', xVelocity);
         confetti.setAttribute('data-y-velocity', yVelocity);
@@ -60,7 +60,7 @@ function animateConfetti(confetti) {
     function update() {
         xVelocity *= 0.99; // Slow down X velocity
         yVelocity *= 0.99; // Slow down Y velocity
-        yVelocity += 2; // Simulate gravity
+        yVelocity += 0.2; // Simulate gravity
 
         confetti.style.left = (parseFloat(confetti.style.left) + xVelocity) + 'px';
         confetti.style.top = (parseFloat(confetti.style.top) + yVelocity) + 'px';
