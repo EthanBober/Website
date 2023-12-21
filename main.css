@@ -1,13 +1,55 @@
-/* CSS Selectors go here */
+* {
+    font-family: 'Inter', sans-serif;
+    box-sizing: border-box;
+}
 
-h1 {
+body {
+    background-color: whitesmoke;
+    line-height: 1.75;
+    font-size: 100%;
+    margin: 0;
+}
+
+.wrapper {
+    width: 80%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+nav {
+    padding-top: 1rem;
+    font-size: 1rem;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    justify-content: space-around;
+}
+
+nav li {
+    padding: 0;
+    margin: 0;
+}
+
+nav a {
+    text-decoration: underline;
     display: block;
-    font-size: 2em;
-    font-weight: bold;
-  }
-  
-  button {
-    margin: 10px;
     padding: 10px;
-    cursor: pointer;
-  }
+    color: black; /* Change as per your color scheme */
+}
+
+main h1 {
+    font-size: 2.5rem; /* Adjust size as needed */
+    margin-top: 2rem;
+}
+
+main p {
+    font-size: 1.25rem; /* Adjust size as needed */
+    color: #333; /* Adjust text color as needed */
+    font-weight: bold;
+}
+
+/* You might want to add additional styles for other elements */
