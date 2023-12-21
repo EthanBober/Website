@@ -18,7 +18,7 @@ body {
 
 nav {
     padding-top: 1rem;
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 
 nav ul {
@@ -42,7 +42,7 @@ nav a {
 }
 
 main h1 {
-    font-size: 2.5rem; /* Adjust size as needed */
+    font-size: 2.8rem; /* Adjust size as needed */
     margin-top: 2rem;
 }
 
