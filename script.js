@@ -21,7 +21,7 @@ function typeWriter(text, elementId, speed) {
 }
 
 document.addEventListener("DOMContentLoaded", function() {
-    typeWriter(" Hi there, ", "line1", 80); // Slower speed for smoothness
+    typeWriter("Hi there, ", "line1", 80); // Slower speed for smoothness
     setTimeout(() => typeWriter("I'm Ethan Bober.", "line2", 80), 1200); // Start after a delay
 });
 
