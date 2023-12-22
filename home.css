@@ -21,6 +21,12 @@ nav {
     font-size: 1.2rem;
 }
 
+.badge-base.LI-profile-badge {
+    width: auto !important;
+    min-width: 100px !important; /* Adjust as necessary */
+}
+
+
 nav ul {
     display: flex;
     list-style-type: none;
