@@ -52,20 +52,22 @@ main p {
     font-weight: bold;
 }
 
-
-
 @media only screen and (max-width: 600px) {
+    .wrapper {
+        width: 98%; /* Increased width */
+    }
+
     nav ul {
         flex-direction: column;
         align-items: center;
     }
 
     main h1 {
-        font-size: 1.8rem;
+        font-size: 2.2rem; /* Increased font size for headers */
     }
 
     main p {
-        font-size: 1rem;
+        font-size: 1.4rem; /* Increased font size for paragraphs */
     }
 
     .smokey-background {
@@ -73,6 +75,8 @@ main p {
         width: 90vw;
     }
 }
+
+
 
 .confetti {
     position: absolute;
