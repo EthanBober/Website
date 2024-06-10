@@ -1,6 +1,8 @@
 * {
     font-family: 'Inter', sans-serif;
     box-sizing: border-box;
+    text-decoration: none;
+
 }
 
 body {
@@ -19,6 +21,7 @@ body {
 nav {
     padding-top: 1rem;
     font-size: 1.2rem;
+    text-decoration: none;
 }
 
 
@@ -36,7 +39,6 @@ nav li {
 }
 
 nav a {
-    text-decoration: underline;
     display: block;
     padding: 10px;
     color: black; /* Change as per your color scheme */
