@@ -8,8 +8,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎯</text></svg>">
-    <link rel='stylesheet' type='text/css' media='screen' href='home.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='photos.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='home.css'>
 </head>
 <body>
     <div class="wrapper">
@@ -23,26 +23,23 @@
         <main>
             <div class="row">
                 <div class="column">
-                  <img src="sample.jpeg">
+                  <img src="DSCF0038.JPG" onclick="enlargeImage(this)">
                 </div>
                 <div class="column">
-                  <img src="sample.jpeg">
+                  <img src="DSCF0056.JPG" onclick="enlargeImage(this)">
                 </div>
                 <div class="column">
-                  <img src="sample.jpeg">
-
+                  <img src="DSCF0099.JPG" onclick="enlargeImage(this)">
                 </div>
                 <div class="column">
-                  <img src="sample.jpeg">
+                  <img src="DSCF0140.JPG" onclick="enlargeImage(this)">
                 </div>
               </div>
-
-
-
-
-
-
         </main>
+    </div>
+    <div id="overlay" onclick="closeImage()"></div>
+    <div id="large-image-container" onclick="closeImage()">
+        <img id="large-image" src="">
     </div>
     <script src="script.js"></script>
     <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>

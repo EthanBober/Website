@@ -73,3 +73,24 @@ function animateConfetti(confetti) {
 
     update();
 }
+
+
+function enlargeImage(img) {
+    var largeImageContainer = document.getElementById("large-image-container");
+    var largeImage = document.getElementById("large-image");
+    var overlay = document.getElementById("overlay");
+
+    largeImage.src = img.src;
+    largeImageContainer.style.display = "block";
+    overlay.style.display = "block";
+    document.body.style.overflow = "hidden"; // Prevent scrolling
+}
+
+function closeImage() {
+    var largeImageContainer = document.getElementById("large-image-container");
+    var overlay = document.getElementById("overlay");
+
+    largeImageContainer.style.display = "none";
+    overlay.style.display = "none";
+    document.body.style.overflow = "auto"; // Re-enable scrolling
+}
