@@ -99,5 +99,5 @@ function handleCommand(command) {
 
 // Initialize the console
 printToConsoleNoHead("____________________                   ________      ______ \n___  ____/_  /___  /_______ _______    ___  __ )________  /______________\n__  __/  _  __/_  __ \  __ `/_  __ \     __  __  |  __ \_  __ \  _ \_  ___/\n_  /___  / /_ _  / / / /_/ /_  / / /   _  /_/ // /_/ /  /_/ /  __/  /    \n/_____/  \__/ /_/ /_/\__,_/ /_/ /_/      /_____/ \____//_.___/\___//_/")
-printToConsole('Welcome to my portfolio console. Type "help" for a list of commands.');
+printToConsole('Welcome to my portfolio! Type "help" for a list of commands.');
 promptInput();
