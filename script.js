@@ -86,7 +86,7 @@ function handleCommand(command) {
             break;
         case 'resume':
             printToConsole('Redirecting to resume...');
-            window.open('resume.pdf', '_blank');
+            window.open('resumeUp.pdf', '_blank');
             break;
         case 'clear':
             consoleElement.innerHTML = '';
