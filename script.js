@@ -82,7 +82,7 @@ function handleCommand(command) {
             printToConsole('Available commands:\n- help\n- aboutme\n- resume \n- clear');
             break;
         case 'aboutme':
-            printToConsole('Hey! 👋 I\'m Ethan. \n I\'m currently studying Material Science and Engineering at the University of Pennsylvania \n I do a bit of research on campus and am involved with a few engineering related clubs. \n my main interests are electronic and nanomaterials. \n Feel free to reach me at ebober@seas.upenn.edu');
+            printToConsole('Hey! 👋 I\'m Ethan. \n I\'m currently studying Material Science and Engineering at the University of Pennsylvania \n I do a bit of research on campus and am involved with a few engineering related clubs. \n My main interests are electronic and nanomaterials. \n Feel free to reach me at ebober@seas.upenn.edu');
             break;
         case 'resume':
             printToConsole('Redirecting to resume...');
