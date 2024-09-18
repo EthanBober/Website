@@ -99,7 +99,7 @@ function handleCommand(command) {
             window.open('https://www.maxxyung.com/', '_blank');
             break;
         case 'thingsido':
-            printToConsole('Right now, I am currently involved with research with the Shu Yang Group on <span style="color:blue;">hydroscopic hydrogel desiccants</span>.  \n Mainly, I synthesize, analyze, and compare performances of the different monomers used for the synthesis. \n Other than that, I also help volunteer for engineering education as a part of Access Engineering and also volunteer in the SOUP comp. here at the UofPenn. \n For a full list, check out my <span style="color:yellow;">resume</span> with the resume command.')
+            printToConsole('Right now, I am currently involved with research with the Shu Yang Group on <span style="color:blue;">hydroscopic hydrogel desiccants</span>.  \n Mainly, I synthesize, analyze, and compare performances of the different monomers used for the synthesis. \n Other than that, I also help volunteer for engineering education as a part of Access Engineering and also volunteer in the SOUP comp. here at the UofPenn. \n For a full list, check out my <span style="color:yellow;">resume</span> with the "resume" command.')
             break;
         case 'clear':
             consoleElement.innerHTML = '';
