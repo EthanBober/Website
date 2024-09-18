@@ -1,3 +1,5 @@
+import DOMPurify from 'dompurify';
+
 const consoleElement = document.getElementById('console');
 
 function printToConsoleNoHead(text) {
@@ -19,6 +21,9 @@ function printToConsoleNoHead(text) {
     consoleElement.appendChild(outputContainer);
 }
 
+
+
+
 function printToConsole(text) {
     const outputContainer = document.createElement('div');
     outputContainer.className = 'output-container';
@@ -29,7 +34,7 @@ function printToConsole(text) {
 
     const outputText = document.createElement('span');
 
-    outputText.innerHTML = text; // Changed from textContent to innerHTML
+    outputText.innerHTML = DOMPurify.sanitize(text);
     outputText.className = 'output-text';
 
     outputContainer.appendChild(promptSymbol);

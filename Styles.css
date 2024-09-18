@@ -24,6 +24,16 @@ body {
     width: 100%;
 }
 
+a {
+    color:white;
+    text-decoration: none;
+}
+
+
+a:hover {
+    text-decoration: underline;
+}
+
 .prompt-symbol {
     font-size: 14px;
     line-height: 1.2;
