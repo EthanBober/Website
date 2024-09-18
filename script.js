@@ -32,13 +32,14 @@ function printToConsole(text) {
 
     const outputText = document.createElement('span');
 
-    outputText.innerHTML = text;
+    outputText.innerHTML = DOMPurify.sanitize(text);
     outputText.className = 'output-text';
 
     outputContainer.appendChild(promptSymbol);
     outputContainer.appendChild(outputText);
     consoleElement.appendChild(outputContainer);
 }
+
 
 
 function promptInput() {
