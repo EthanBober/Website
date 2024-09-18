@@ -28,16 +28,15 @@ function printToConsole(text) {
     promptSymbol.className = 'prompt-symbol';
 
     const outputText = document.createElement('span');
-    
-    outputText.textContent = text;
+
+    outputText.innerHTML = text; // Changed from textContent to innerHTML
     outputText.className = 'output-text';
-
-
 
     outputContainer.appendChild(promptSymbol);
     outputContainer.appendChild(outputText);
     consoleElement.appendChild(outputContainer);
 }
+
 
 function promptInput() {
     const inputContainer = document.createElement('div');
@@ -79,7 +78,7 @@ function promptInput() {
 function handleCommand(command) {
     switch (command.toLowerCase()) {
         case 'help':
-            printToConsole('Available commands:\n- help\n- aboutme\n- resume \n- clear');
+            printToConsole('Available commands:\n- help\n- aboutme\n- resume \n- socials\n- clear');
             break;
         case 'aboutme':
             printToConsole('Hey! 👋 I\'m Ethan. \n I\'m currently studying Material Science and Engineering at the University of Pennsylvania \n I do a bit of research on campus and am involved with a few engineering related clubs. \n My main interests are electronic/nanomaterials. \n Feel free to reach me at ebober@seas.upenn.edu');
@@ -87,6 +86,9 @@ function handleCommand(command) {
         case 'resume':
             printToConsole('Redirecting to resume...');
             window.open('resumeUp.pdf', '_blank');
+            break;
+        case 'socials':
+            printToConsole('Connect with me on: <a href="https://www.linkedin.com/in/ethanbober/" target="_blank">LinkedIn</a> | <a href="https://github.com/EthanBober" target="_blank">GitHub</a>');
             break;
         case 'clear':
             consoleElement.innerHTML = '';
