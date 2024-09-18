@@ -94,6 +94,9 @@ function handleCommand(command) {
         case 'socials':
             printToConsole('Connect with me on: <a href="https://www.linkedin.com/in/ethanbober/" target="_blank">LinkedIn</a> | <a href="https://github.com/EthanBober" target="_blank">GitHub</a>');
             break;
+        case 'maxx':
+            printToConsole('secret found...');
+            window.open('https://www.maxxyung.com/', '_blank');
         case 'clear':
             consoleElement.innerHTML = '';
             break;
