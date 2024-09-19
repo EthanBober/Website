@@ -65,3 +65,55 @@ input.console-input,
     100% { color: inherit; text-shadow: none; }
 }
 
+.windows-photo-container {
+    position: relative;
+    display: inline-block;
+    background-color: #C0C0C0; /* Classic Windows gray */
+    border: 2px solid #808080;
+    font-family: 'JetBrains Mono', monospace;
+    color: #000000;
+    margin: 10px 0;
+}
+
+.windows-photo-container .title-bar {
+    position: relative;
+    width: 100%;
+    height: 20px;
+    background: linear-gradient(to bottom, #000080, #2861E9); /* Windows title bar blue */
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    padding-left: 5px;
+    box-sizing: border-box;
+}
+
+.windows-photo-container .title-bar span {
+    flex-grow: 1;
+}
+
+.windows-photo-container .title-bar .buttons {
+    display: flex;
+    align-items: center;
+    margin-right: 5px;
+}
+
+.windows-photo-container .title-bar .buttons div {
+    width: 16px;
+    height: 14px;
+    margin-left: 2px;
+    background-color: #C0C0C0;
+    border: 1px solid #808080;
+    text-align: center;
+    line-height: 12px;
+    font-size: 10px;
+    color: black;
+    font-family: monospace;
+    cursor: default;
+}
+
+.windows-photo-container .content {
+    padding: 5px;
+    background-color: #C0C0C0;
+}
