@@ -9,7 +9,7 @@ const photoTree = {
         },
         'Nature': {
             'fennels' : 'photos/fennels.JPG',
-            'japanesemapele' : 'photos/japanesemaple.JPG',
+            'japanesemaple' : 'photos/japanesemaple.JPG',
             'wyomingcanna' : 'photos/wyomingcanna.JPG'
         }
     }
