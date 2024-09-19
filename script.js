@@ -122,7 +122,7 @@ function promptInput() {
 function handleCommand(command) {
     switch (command.toLowerCase()) {
         case 'help':
-            printToConsole('Available commands:\n- help\n- aboutme\n- resume \n- thingsido \n- socials\n- clear', promptInput);
+            printToConsole('Available commands:\n- help\n- aboutme\n- thingsido \n- socials\n- clear', promptInput);
             break;
         case 'aboutme':
             printToConsole('Hey! 👋 I\'m Ethan. \nI\'m currently studying Material Science and Engineering at the University of Pennsylvania.\nI do a bit of research on campus and am involved with a few engineering-related clubs.\nMy main interests are <span id="nanomaterials">electronic/nanomaterials</span>.\nFeel free to reach me at <b>ebober@seas.upenn.edu</b>', function() {
@@ -140,13 +140,7 @@ function handleCommand(command) {
                 promptInput();
             });
             break;
-        
-        case 'resume':
-            printToConsole('Redirecting to resume...', function() {
-                window.open('resumeUp.pdf', '_blank');
-                promptInput();
-            });
-            break;
+
         case 'socials':
             printToConsole('Connect with me on: <a href="https://www.linkedin.com/in/ethanbober/" target="_blank">LinkedIn</a> | <a href="https://github.com/EthanBober" target="_blank">GitHub</a>', promptInput);
             break;
@@ -157,7 +151,7 @@ function handleCommand(command) {
             });
             break;
         case 'thingsido':
-            printToConsole('Right now, I am currently involved with research with the Shu Yang Group on <span style="color:blue;">hydroscopic hydrogel desiccants</span>.\nMainly, I synthesize, analyze, and compare performances of the different monomers used for the synthesis.\nOther than that, I also help volunteer for engineering education as a part of Access Engineering and also volunteer in the SOUP comp. here at the UofPenn.\nFor a full list, check out my <span style="color:yellow;">resume</span> with the "resume" command.', promptInput);
+            printToConsole('Right now, I am currently involved with research with the Shu Yang Group on <span style="color:blue;">hydroscopic hydrogel desiccants</span>.\nMainly, I synthesize, analyze, and compare performances of the different monomers used for the synthesis.\nOther than that, I also help volunteer for engineering education as a part of Access Engineering and also volunteer in the SOUP comp. here at the UofPenn.', promptInput);
             break;
         case 'clear':
             consoleElement.innerHTML = '';
