@@ -122,25 +122,17 @@ function promptInput() {
 function handleCommand(command) {
     switch (command.toLowerCase()) {
         case 'help':
-            printToConsole('Available commands:\n- help\n- aboutme\n- thingsido \n- socials\n- clear', promptInput);
+            printToConsole('Available commands:\n- help\n- aboutme\n- resume \n- thingsido \n- socials\n- clear', promptInput);
             break;
         case 'aboutme':
-            printToConsole('Hey! 👋 I\'m Ethan. \nI\'m currently studying Material Science and Engineering at the University of Pennsylvania.\nI do a bit of research on campus and am involved with a few engineering-related clubs.\nMy main interests are <span id="nanomaterials">electronic/nanomaterials</span>.\nFeel free to reach me at <b>ebober@seas.upenn.edu</b>', function() {
-                var nanoElement = document.getElementById('nanomaterials');
-                if (nanoElement) {
-                    nanoElement.style.cursor = 'pointer'; // Change cursor to pointer on hover
-                    nanoElement.addEventListener('click', function() {
-                        nanoElement.classList.add('cool-effect');
-                        // Optionally remove the class after animation completes
-                        setTimeout(function() {
-                            nanoElement.classList.remove('cool-effect');
-                        }, 1000); // Duration of the animation
-                    });
-                }
+            printToConsole('Hey! 👋 I\'m Ethan. \n  I\'m currently studying Material Science and Engineering at the University of Pennsylvania.\n  I do a bit of research on campus and am involved with a few engineering-related clubs.\n  My main interests are electronic/nanomaterials.\n  Feel free to reach me at ebober@seas.upenn.edu', promptInput);
+            break;
+        case 'resume':
+            printToConsole('Redirecting to resume...', function() {
+                window.open('resumeUp.pdf', '_blank');
                 promptInput();
             });
             break;
-
         case 'socials':
             printToConsole('Connect with me on: <a href="https://www.linkedin.com/in/ethanbober/" target="_blank">LinkedIn</a> | <a href="https://github.com/EthanBober" target="_blank">GitHub</a>', promptInput);
             break;
@@ -151,7 +143,7 @@ function handleCommand(command) {
             });
             break;
         case 'thingsido':
-            printToConsole('Right now, I am currently involved with research with the Shu Yang Group on <span style="color:blue;">hydroscopic hydrogel desiccants</span>.\nMainly, I synthesize, analyze, and compare performances of the different monomers used for the synthesis.\nOther than that, I also help volunteer for engineering education as a part of Access Engineering and also volunteer in the SOUP comp. here at the UofPenn.', promptInput);
+            printToConsole('Right now, I am currently involved with research with the Shu Yang Group on <span style="color:blue;">hydroscopic hydrogel desiccants</span>.\n  Mainly, I synthesize, analyze, and compare performances of the different monomers used for the synthesis.\n  Other than that, I also help volunteer for engineering education as a part of Access Engineering and also volunteer in the SOUP comp. here at the UofPenn.', promptInput);
             break;
         case 'clear':
             consoleElement.innerHTML = '';
