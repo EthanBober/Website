@@ -148,16 +148,10 @@ function handleCommand(command) {
 
     switch (cmd) {
         case 'help':
-            printToConsole('Available commands:\n- help\n- aboutme\n- resume \n- thingsido \n- socials\n- photos\n- clear', promptInput);
+            printToConsole('Available commands:\n- help\n- aboutme\n- thingsido \n- socials\n- photos\n- clear', promptInput);
             break;
         case 'aboutme':
             printToConsole('Hey! 👋 I\'m Ethan. \n   I\'m currently studying Material Science and Engineering at the University of Pennsylvania (<span style="color:red;">Go Quakers!</span>).\n   I do a bit of research on campus and I am involved with a few engineering-related clubs.\n   My main interests are electronic/nanomaterials.\n   Feel free to reach me at <b>ebober@seas.upenn.edu</b>', promptInput);
-            break;
-        case 'resume':
-            printToConsole('Redirecting to resume...', function() {
-                window.open('resumeUp.pdf', '_blank');
-                promptInput();
-            });
             break;
         case 'socials':
             printToConsole('Connect with me on: <a href="https://www.linkedin.com/in/ethanbober/" target="_blank">LinkedIn</a> | <a href="https://github.com/EthanBober" target="_blank">GitHub</a>', promptInput);
