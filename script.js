@@ -63,7 +63,7 @@ function printToConsoleNoHead(text, callback) {
     outputContainer.appendChild(outputText);
     consoleElement.appendChild(outputContainer);
 
-    typeHtml(outputText, text, 10, callback);
+    typeHtml(outputText, text, 2, callback);
 }
 
 function printToConsole(text, callback) {
