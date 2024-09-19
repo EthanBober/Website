@@ -53,3 +53,15 @@ input.console-input,
     padding: 0;
     margin: 0;
 }
+
+
+.cool-effect {
+    animation: glow 1s ease-in-out;
+}
+
+@keyframes glow {
+    0% { color: inherit; text-shadow: none; }
+    50% { color: #FFD700; text-shadow: 0 0 10px #FFD700; }
+    100% { color: inherit; text-shadow: none; }
+}
+

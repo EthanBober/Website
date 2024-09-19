@@ -125,8 +125,22 @@ function handleCommand(command) {
             printToConsole('Available commands:\n- help\n- aboutme\n- resume \n- thingsido \n- socials\n- clear', promptInput);
             break;
         case 'aboutme':
-            printToConsole('Hey! 👋 I\'m Ethan. \nI\'m currently studying Material Science and Engineering at the University of Pennsylvania.\nI do a bit of research on campus and am involved with a few engineering-related clubs.\nMy main interests are electronic/nanomaterials.\nFeel free to reach me at ebober@seas.upenn.edu', promptInput);
+            printToConsole('Hey! 👋 I\'m Ethan. \nI\'m currently studying Material Science and Engineering at the University of Pennsylvania.\nI do a bit of research on campus and am involved with a few engineering-related clubs.\nMy main interests are <span id="nanomaterials">electronic/nanomaterials</span>.\nFeel free to reach me at ebober@seas.upenn.edu', function() {
+                var nanoElement = document.getElementById('nanomaterials');
+                if (nanoElement) {
+                    nanoElement.style.cursor = 'pointer'; // Change cursor to pointer on hover
+                    nanoElement.addEventListener('click', function() {
+                        nanoElement.classList.add('cool-effect');
+                        // Optionally remove the class after animation completes
+                        setTimeout(function() {
+                            nanoElement.classList.remove('cool-effect');
+                        }, 1000); // Duration of the animation
+                    });
+                }
+                promptInput();
+            });
             break;
+        
         case 'resume':
             printToConsole('Redirecting to resume...', function() {
                 window.open('resumeUp.pdf', '_blank');
