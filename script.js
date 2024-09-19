@@ -125,7 +125,7 @@ function handleCommand(command) {
             printToConsole('Available commands:\n- help\n- aboutme\n- resume \n- thingsido \n- socials\n- clear', promptInput);
             break;
         case 'aboutme':
-            printToConsole('Hey! 👋 I\'m Ethan. \n  I\'m currently studying Material Science and Engineering at the University of Pennsylvania.\n  I do a bit of research on campus and am involved with a few engineering-related clubs.\n  My main interests are electronic/nanomaterials.\n  Feel free to reach me at ebober@seas.upenn.edu', promptInput);
+            printToConsole('Hey! 👋 I\'m Ethan. \n   I\'m currently studying Material Science and Engineering at the University of Pennsylvania (<span style="color:red;">Go Quakers!</span>).\n   I do a bit of research on campus and I am involved with a few engineering-related clubs.\n   My main interests are electronic/nanomaterials.\n   Feel free to reach me at <b>ebober@seas.upenn.edu</b>', promptInput);
             break;
         case 'resume':
             printToConsole('Redirecting to resume...', function() {
@@ -143,7 +143,7 @@ function handleCommand(command) {
             });
             break;
         case 'thingsido':
-            printToConsole('Right now, I am currently involved with research with the Shu Yang Group on <span style="color:blue;">hydroscopic hydrogel desiccants</span>.\n  Mainly, I synthesize, analyze, and compare performances of the different monomers used for the synthesis.\n  Other than that, I also help volunteer for engineering education as a part of Access Engineering and also volunteer in the SOUP comp. here at the UofPenn.', promptInput);
+            printToConsole('Right now, I am currently involved with research with the Shu Yang Group on <span style="color:blue;">hydroscopic hydrogel desiccants</span>.\n   Mainly, I synthesize, analyze, and compare performances of the different monomers used for the synthesis.\n   Other than that, I also help volunteer for engineering education as a part of Access Engineering and also volunteer in the SOUP comp. here at the UofPenn.', promptInput);
             break;
         case 'clear':
             consoleElement.innerHTML = '';
