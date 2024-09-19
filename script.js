@@ -2,8 +2,15 @@ const consoleElement = document.getElementById('console');
 
 const photoTree = {
     'Photos': {
+        'Campus': {
+            'bike': 'photos/bikenflowers.JPG',
+            'amtrak': 'photos/amtrak.JPG',
+            'campuslamp': 'photos/campuslamp.JPG'
+        },
         'Nature': {
-            'bike': 'photos/bikenflowers.JPG'
+            'fennels' : 'photos/fennels.JPG',
+            'japanesemapele' : 'photos/japanesemaple.JPG',
+            'wyomingcanna' : 'photos/wyomingcanna.JPG'
         }
     }
 };
